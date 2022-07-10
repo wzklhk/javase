@@ -1,0 +1,11 @@
+server:
+  port: 8906
+
+spring:
+  messages:
+    basename: i18n/message  # 资源文件路径
+    encoding: UTF-8  # 资源文件编码
+
+i18n:
+  lang: zh
+  country: HK
