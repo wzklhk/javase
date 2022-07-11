@@ -5,7 +5,7 @@ import com.example.javase.design.factory.shape.shape.impl.Square;
 
 public class SquareFactory extends AbstractShapeFactory {
     @Override
-    public Shape getShape(String shape) {
+    public Shape getShape() {
         return new Square();
     }
 }
