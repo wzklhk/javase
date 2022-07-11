@@ -5,7 +5,7 @@ import com.example.javase.design.factory.shape.shape.impl.Triangle;
 
 public class TriangleFactory extends AbstractShapeFactory {
     @Override
-    public Shape getShape(String shape) {
+    public Shape getShape() {
         return new Triangle();
     }
 }
