@@ -1,5 +1,5 @@
 /*
-package com.example.javase.design.factory.shape.factory;
+package com.example.javase.design.factory.shape.shape.factory;
 
 import com.example.javase.design.factory.shape.shape.Shape;
 import com.example.javase.design.factory.shape.shape.impl.Circle;

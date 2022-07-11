@@ -1,14 +1,15 @@
-package com.example.javase.design.factory.shape.factory;
+package com.example.javase.design.factory.color.factory;
 
 import com.example.javase.design.factory.AbstractFactory;
 import com.example.javase.design.factory.color.Color;
 import com.example.javase.design.factory.shape.Shape;
 
-public abstract class AbstractShapeFactory extends AbstractFactory {
-    public abstract Shape getShape();
+public abstract class AbstractColorFactory extends AbstractFactory {
+
+    public abstract Color getColor();
 
     @Override
-    public Color getColor() {
+    public Shape getShape() {
         return null;
     }
 }
