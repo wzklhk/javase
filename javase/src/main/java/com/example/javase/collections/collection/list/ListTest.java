@@ -1,4 +1,4 @@
-package com.example.javase.collection;
+package com.example.javase.collections.collection.list;
 
 import java.util.ArrayList;
 import java.util.Iterator;
