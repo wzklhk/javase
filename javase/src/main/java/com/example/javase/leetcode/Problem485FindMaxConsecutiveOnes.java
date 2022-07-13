@@ -17,12 +17,10 @@ public class Problem485FindMaxConsecutiveOnes {
         return maxConsecutiveOnes;
     }
 
-}
-
-class Main {
     public static void main(String[] args) {
         Problem485FindMaxConsecutiveOnes p = new Problem485FindMaxConsecutiveOnes();
         int[] nums = {1, 1, 0, 1, 1, 1, 1, 1, 1};
         System.out.println(p.findMaxConsecutiveOnes(nums));
     }
+
 }
