@@ -1,9 +1,9 @@
-package com.example.javase.design.factory.shape;
+package com.example.javase.design.factory;
 
+import com.example.javase.design.factory.shape.Shape;
 import com.example.javase.design.factory.shape.factory.CircleFactory;
 import com.example.javase.design.factory.shape.factory.SquareFactory;
 import com.example.javase.design.factory.shape.factory.TriangleFactory;
-import com.example.javase.design.factory.shape.shape.Shape;
 
 public class MainFactoryShape {
     public static void main(String[] args) {

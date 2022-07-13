@@ -1,7 +1,7 @@
 package com.example.javase.design.factory.shape.factory;
 
-import com.example.javase.design.factory.shape.shape.Shape;
-import com.example.javase.design.factory.shape.shape.impl.Square;
+import com.example.javase.design.factory.shape.Shape;
+import com.example.javase.design.factory.shape.impl.Square;
 
 public class SquareFactory extends AbstractShapeFactory {
     @Override

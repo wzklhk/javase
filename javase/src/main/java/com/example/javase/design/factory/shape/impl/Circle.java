@@ -1,6 +1,6 @@
-package com.example.javase.design.factory.shape.shape.impl;
+package com.example.javase.design.factory.shape.impl;
 
-import com.example.javase.design.factory.shape.shape.Shape;
+import com.example.javase.design.factory.shape.Shape;
 
 public class Circle implements Shape {
     @Override
