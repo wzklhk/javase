@@ -7,7 +7,7 @@ import java.lang.reflect.Modifier;
 
 public class ReflectTest {
     public static void main(String[] args) {
-        String name = "com.example.javase.reflect.User";
+        String name = "com.example.javase.reflect.bean.User";
 
         try {
             Class cl = Class.forName(name);  // 根据类名字获取类的Class

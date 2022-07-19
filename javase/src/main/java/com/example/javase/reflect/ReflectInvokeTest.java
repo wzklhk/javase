@@ -1,5 +1,7 @@
 package com.example.javase.reflect;
 
+import com.example.javase.reflect.bean.User;
+
 import java.lang.reflect.Method;
 
 public class ReflectInvokeTest {
