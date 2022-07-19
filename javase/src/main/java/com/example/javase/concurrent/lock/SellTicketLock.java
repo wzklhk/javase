@@ -1,5 +1,6 @@
 package com.example.javase.concurrent.lock;
 
+import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class SellTicketLock {
@@ -39,7 +40,7 @@ public class SellTicketLock {
 class Ticket {
     private int num = 100;
 
-    private final ReentrantLock lock = new ReentrantLock();
+    private final Lock lock = new ReentrantLock();
 
     public Boolean sell() {
 
