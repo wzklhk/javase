@@ -1,9 +1,8 @@
-package com.example.javase.concurrent.sync;
+package com.example.javase.concurrent.lock;
 
-// 1、创建资源类，在资源类创建属性和操作方法
-// 2、创建多个线程，调用资源类的操作方法
+import java.util.concurrent.locks.ReentrantLock;
 
-public class SellTicket {
+public class SellTicketLock {
     public static void main(String[] args) {
         Ticket ticket = new Ticket();
         new Thread(() -> {
@@ -36,15 +35,34 @@ public class SellTicket {
     }
 }
 
-class Ticket {
-    private int num = 30;
 
-    public synchronized Boolean sell() {
-        if (num > 0) {
-            System.out.println(Thread.currentThread().getName() + "卖票：" + num-- + "，剩余：" + num);
-            return true;
-        } else {
-            return false;
+class Ticket {
+    private int num = 100;
+
+    private final ReentrantLock lock = new ReentrantLock();
+
+    public Boolean sell() {
+
+        lock.lock();  // 加锁
+
+        try {
+            if (num > 0) {
+                System.out.println(Thread.currentThread().getName() + "卖票：" + num-- + "，剩余：" + num);
+                if (isSoldOut()) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        } finally {
+            lock.unlock();  // 解锁
         }
+
+        return false;
+    }
+
+    public Boolean isSoldOut() {
+        return num <= 0;
     }
 }
+
