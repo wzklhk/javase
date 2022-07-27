@@ -19,7 +19,7 @@ package com.example.javase.leetcode;
  * <p>
  * Related Topics 字符串 动态规划 👍 5253 👎 0
  */
-public class Problem5LongestPalindrome {
+public class Problem5MediumLongestPalindrome {
     public String longestPalindrome(String s) { // 动态规划
 
         int len = s.length();
@@ -100,7 +100,7 @@ public class Problem5LongestPalindrome {
     }
 
     public static void main(String[] args) {
-        String babab = new Problem5LongestPalindrome().longestPalindrome2("abcdefg");
+        String babab = new Problem5MediumLongestPalindrome().longestPalindrome2("abcdefg");
         System.out.println(babab);
     }
 }

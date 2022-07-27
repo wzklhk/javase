@@ -32,7 +32,7 @@ package com.example.javase.leetcode;
  */
 
 
-public class Problem485FindMaxConsecutiveOnes {
+public class Problem485EasyFindMaxConsecutiveOnes {
     public int findMaxConsecutiveOnes(int[] nums) {
         int maxConsecutiveOnes = 0;
         int current = 0;
@@ -50,7 +50,7 @@ public class Problem485FindMaxConsecutiveOnes {
     }
 
     public static void main(String[] args) {
-        Problem485FindMaxConsecutiveOnes p = new Problem485FindMaxConsecutiveOnes();
+        Problem485EasyFindMaxConsecutiveOnes p = new Problem485EasyFindMaxConsecutiveOnes();
         int[] nums = {1, 1, 0, 1, 1, 1, 1, 1, 1};
         System.out.println(p.findMaxConsecutiveOnes(nums));
     }

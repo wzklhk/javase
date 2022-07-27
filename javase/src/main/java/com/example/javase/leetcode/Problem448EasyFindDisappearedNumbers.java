@@ -40,7 +40,7 @@ import java.util.Map;
  */
 
 
-public class Problem448FindDisappearedNumbers {
+public class Problem448EasyFindDisappearedNumbers {
     public List<Integer> findDisappearedNumbersHashMap(int[] nums) {
         List<Integer> result = new ArrayList<>();
         Map<Integer, Integer> map = new HashMap<>();
@@ -80,7 +80,7 @@ public class Problem448FindDisappearedNumbers {
     }
 
     public static void main(String[] args) {
-        Problem448FindDisappearedNumbers p = new Problem448FindDisappearedNumbers();
+        Problem448EasyFindDisappearedNumbers p = new Problem448EasyFindDisappearedNumbers();
         int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
         System.out.println(p.findDisappearedNumbersHashMap(nums));
     }

@@ -39,7 +39,7 @@ package com.example.javase.leetcode;
  */
 
 
-public class Problem121MaxProfit {
+public class Problem121EasyMaxProfit {
     public int maxProfit(int[] prices) {
         int maxprofit = 0;
         for (int i = 0; i < prices.length - 1; i++) {
@@ -70,7 +70,7 @@ public class Problem121MaxProfit {
 
 
     public static void main(String[] args) {
-        Problem121MaxProfit p = new Problem121MaxProfit();
+        Problem121EasyMaxProfit p = new Problem121EasyMaxProfit();
 
         int[] prices = {7, 1, 5, 3, 6, 4};
         System.out.println(p.maxProfit(prices));

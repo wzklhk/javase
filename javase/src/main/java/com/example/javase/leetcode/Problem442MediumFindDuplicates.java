@@ -48,7 +48,7 @@ import java.util.Map;
  */
 
 
-public class Problem442FindDuplicates {
+public class Problem442MediumFindDuplicates {
     /**
      * 利用哈希表
      */
@@ -142,7 +142,7 @@ public class Problem442FindDuplicates {
     }
 
     public static void main(String[] args) {
-        Problem442FindDuplicates p = new Problem442FindDuplicates();
+        Problem442MediumFindDuplicates p = new Problem442MediumFindDuplicates();
         int[] nums = {1};
         System.out.println(p.findDuplicatesSwapLocation(nums));
     }

@@ -52,7 +52,7 @@ package com.example.javase.leetcode;
  */
 
 
-public class Problem598MaxCount {
+public class Problem598EasyMaxCount {
     public int maxCount(int m, int n, int[][] ops) {
         int mina = m, minb = n;
         for (int[] op : ops) {

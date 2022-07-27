@@ -40,7 +40,7 @@ import java.util.Arrays;
  */
 
 
-public class Problem274HIndex {
+public class Problem274MediumHIndex {
     public int hIndexSort(int[] citations) {
         Arrays.sort(citations);
 

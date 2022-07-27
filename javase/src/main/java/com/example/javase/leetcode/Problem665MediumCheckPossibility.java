@@ -39,7 +39,7 @@ package com.example.javase.leetcode;
  */
 
 
-public class Problem665CheckPossibility {
+public class Problem665MediumCheckPossibility {
     public boolean checkPossibility(int[] nums) {
         int n = nums.length;
         for (int i = 0; i < n - 1; ++i) {
@@ -88,7 +88,7 @@ public class Problem665CheckPossibility {
     }
 
     public static void main(String[] args) {
-        Problem665CheckPossibility p = new Problem665CheckPossibility();
+        Problem665MediumCheckPossibility p = new Problem665MediumCheckPossibility();
 
         int[] nums = {5, 4, 3, 2, 1};
         System.out.println(p.checkPossibility(nums));

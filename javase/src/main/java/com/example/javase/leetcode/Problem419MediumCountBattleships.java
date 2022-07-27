@@ -43,7 +43,7 @@ package com.example.javase.leetcode;
  */
 
 
-public class Problem419CountBattleships {
+public class Problem419MediumCountBattleships {
     public int countBattleships(char[][] board) {
         int row = board.length;
         int col = board[0].length;

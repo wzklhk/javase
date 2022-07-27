@@ -48,7 +48,7 @@ package com.example.javase.leetcode;
  */
 
 
-public class Problem495FindPoisonedDuration {
+public class Problem495EasyFindPoisonedDuration {
     public int findPoisonedDuration(int[] timeSeries, int duration) {
         int sumTime = 0;  //总中毒时间
         int expired = 0;  // 中毒结束时刻

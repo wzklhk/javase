@@ -38,7 +38,7 @@ package com.example.javase.leetcode;
  */
 
 
-public class Problem283MoveZeroes {
+public class Problem283EasyMoveZeroes {
     public void moveZeroes(int[] nums) {
         int left = 0;
         int right = 0;
@@ -76,7 +76,7 @@ public class Problem283MoveZeroes {
     }
 
     public static void main(String[] args) {
-        Problem283MoveZeroes p = new Problem283MoveZeroes();
+        Problem283EasyMoveZeroes p = new Problem283EasyMoveZeroes();
         int[] nums = {1, 0, 2, 3};
         p.moveZeroes2(nums);
 

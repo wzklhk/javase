@@ -73,7 +73,7 @@ import java.util.List;
  * <p>
  * Related Topics 线段树 数组 有序集合 👍 83 👎 0
  */
-public class Problem699FallingSquares {
+public class Problem699HardFallingSquares {
     public List<Integer> fallingSquares(int[][] positions) {  // 暴力穷举
         int n = positions.length;
         List<Integer> heights = new ArrayList<>();

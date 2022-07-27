@@ -37,7 +37,7 @@ package com.example.javase.leetcode;
  */
 
 
-public class Problem605CanPlaceFlowers {
+public class Problem605EasyCanPlaceFlowers {
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
         if (n == 0) {
             return true;
@@ -93,7 +93,7 @@ public class Problem605CanPlaceFlowers {
     }
 
     public static void main(String[] args) {
-        Problem605CanPlaceFlowers p = new Problem605CanPlaceFlowers();
+        Problem605EasyCanPlaceFlowers p = new Problem605EasyCanPlaceFlowers();
 
         int[] flowerbed = {0, 1, 1, 0, 0, 1};
         int n = 1;

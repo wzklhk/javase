@@ -45,7 +45,7 @@ import java.util.Arrays;
  * Related Topics 数组 排序 👍 370 👎 0
  */
 
-public class Problem414ThirdMax {
+public class Problem414EasyThirdMax {
     public int thirdMaxSort(int[] nums) {
         Arrays.sort(nums);
         /*for (int num : nums) {
@@ -77,7 +77,7 @@ public class Problem414ThirdMax {
     }
 
     public static void main(String[] args) {
-        Problem414ThirdMax p = new Problem414ThirdMax();
+        Problem414EasyThirdMax p = new Problem414EasyThirdMax();
         int[] nums = {2, 2, 3, 1};
         System.out.println(p.thirdMaxSort(nums));
     }

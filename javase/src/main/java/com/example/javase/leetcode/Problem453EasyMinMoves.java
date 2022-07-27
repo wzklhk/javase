@@ -36,7 +36,7 @@ package com.example.javase.leetcode;
  * Related Topics 数组 数学 👍 470 👎 0
  */
 
-public class Problem453MinMoves {
+public class Problem453EasyMinMoves {
     public int minMoves(int[] nums) {
 
         // 1、获取最小值
@@ -57,7 +57,7 @@ public class Problem453MinMoves {
     }
 
     public static void main(String[] args) {
-        Problem453MinMoves p = new Problem453MinMoves();
+        Problem453EasyMinMoves p = new Problem453EasyMinMoves();
 
         int[] nums = {1, 1, 1000000000};
         System.out.println(p.minMoves(nums));

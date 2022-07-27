@@ -40,7 +40,7 @@ import java.util.Map;
  */
 
 
-public class Problem645FindErrorNums {
+public class Problem645EasyFindErrorNums {
     /**
      * 利用HashMap，找到出现2次和出现0次的数字，即为重复的数字和丢失的数字
      */
@@ -87,7 +87,7 @@ public class Problem645FindErrorNums {
     }
 
     public static void main(String[] args) {
-        Problem645FindErrorNums p = new Problem645FindErrorNums();
+        Problem645EasyFindErrorNums p = new Problem645EasyFindErrorNums();
         int[] nums = {1, 1};
         int[] errorNumsSort = p.findErrorNumsSort(nums);
         for (int i : errorNumsSort) {

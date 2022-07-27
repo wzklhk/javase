@@ -44,7 +44,7 @@ import java.util.Arrays;
  */
 
 
-public class Problem561ArrayPairSum {
+public class Problem561EasyArrayPairSum {
 
     public int arrayPairSum(int[] nums) {
         int n = nums.length;
@@ -59,7 +59,7 @@ public class Problem561ArrayPairSum {
     }
 
     public static void main(String[] args) {
-        Problem561ArrayPairSum p = new Problem561ArrayPairSum();
+        Problem561EasyArrayPairSum p = new Problem561EasyArrayPairSum();
 
         int[] nums = {6, 2, 6, 5, 1, 2};
         System.out.println(p.arrayPairSum(nums));

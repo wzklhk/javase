@@ -54,7 +54,7 @@ package com.example.javase.leetcode;
  */
 
 
-public class Problem189Rotate {
+public class Problem189MediumRotate {
     public void rotate(int[] nums, int k) {
         int n = nums.length;
         for (int i = 0; i < k; i++) {
@@ -100,7 +100,7 @@ public class Problem189Rotate {
     }
 
     public static void main(String[] args) {
-        Problem189Rotate p = new Problem189Rotate();
+        Problem189MediumRotate p = new Problem189MediumRotate();
         int[] nums = {-1};
         int k = 1;
         p.rotateReverseArray(nums, k);

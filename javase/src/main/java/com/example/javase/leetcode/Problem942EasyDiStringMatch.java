@@ -41,9 +41,9 @@
 
 package com.example.javase.leetcode;
 
-public class Problem942Solution {
+public class Problem942EasyDiStringMatch {
     public static void main(String[] args) {
-        Problem942Solution solution = new Problem942Solution();
+        Problem942EasyDiStringMatch solution = new Problem942EasyDiStringMatch();
         for (int d : solution.diStringMatch("DDD")) {
             System.out.println(d);
         }

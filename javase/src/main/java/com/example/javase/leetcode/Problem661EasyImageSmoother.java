@@ -54,7 +54,7 @@ package com.example.javase.leetcode;
  * Related Topics 数组 矩阵 👍 175 👎 0
  */
 
-public class Problem661ImageSmoother {
+public class Problem661EasyImageSmoother {
 
     public int[][] imageSmoother(int[][] img) {
         int m = img.length;
@@ -79,7 +79,7 @@ public class Problem661ImageSmoother {
     }
 
     public static void main(String[] args) {
-        Problem661ImageSmoother p = new Problem661ImageSmoother();
+        Problem661EasyImageSmoother p = new Problem661EasyImageSmoother();
 
         int[][] img = {
                 {1, 1, 1},

@@ -42,7 +42,7 @@ import java.util.Map;
  */
 
 
-public class Problem41FirstMissingPositive {
+public class Problem41HardFirstMissingPositive {
     /**
      * 使用HashMap
      */
@@ -108,7 +108,7 @@ public class Problem41FirstMissingPositive {
     }
 
     public static void main(String[] args) {
-        Problem41FirstMissingPositive p = new Problem41FirstMissingPositive();
+        Problem41HardFirstMissingPositive p = new Problem41HardFirstMissingPositive();
         int[] nums = {5, 6, 7, 8};
         System.out.println(p.firstMissingPositiveNoHashMapMark(nums));
     }

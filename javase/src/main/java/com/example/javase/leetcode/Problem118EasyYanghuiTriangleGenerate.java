@@ -37,7 +37,7 @@ import java.util.List;
  * RelatedTopics数组动态规划👍794👎0
  */
 
-public class Problem118YanghuiTriangleGenerate {
+public class Problem118EasyYanghuiTriangleGenerate {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> ret = new ArrayList<List<Integer>>();
         for (int i = 0; i < numRows; ++i) {

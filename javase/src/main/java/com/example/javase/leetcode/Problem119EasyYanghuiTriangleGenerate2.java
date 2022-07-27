@@ -51,7 +51,7 @@ import java.util.List;
  */
 
 
-public class Problem119YanghuiTriangleGenerate2 {
+public class Problem119EasyYanghuiTriangleGenerate2 {
     public List<Integer> getRow(int rowIndex) {
         List<Integer> row = new ArrayList<Integer>();
         row.add(1);
@@ -62,7 +62,7 @@ public class Problem119YanghuiTriangleGenerate2 {
     }
 
     public static void main(String[] args) {
-        Problem119YanghuiTriangleGenerate2 p = new Problem119YanghuiTriangleGenerate2();
+        Problem119EasyYanghuiTriangleGenerate2 p = new Problem119EasyYanghuiTriangleGenerate2();
         System.out.println(p.getRow(13));
     }
 }

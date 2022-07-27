@@ -43,7 +43,7 @@ import java.util.Arrays;
  */
 
 
-public class Problem455FindContentChildren {
+public class Problem455EasyFindContentChildren {
     public int findContentChildren(int[] g, int[] s) {
         int ng = g.length;
         int ns = s.length;
@@ -65,7 +65,7 @@ public class Problem455FindContentChildren {
     }
 
     public static void main(String[] args) {
-        Problem455FindContentChildren p = new Problem455FindContentChildren();
+        Problem455EasyFindContentChildren p = new Problem455EasyFindContentChildren();
         int[] g = {10, 9, 8, 7}, s = {5, 6, 7, 8};
         System.out.println(p.findContentChildren(g, s));
     }

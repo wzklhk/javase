@@ -42,7 +42,7 @@ import java.util.Arrays;
  */
 
 
-public class Problem628MaximumProduct {
+public class Problem628EasyMaximumProduct {
     public int maximumProductSort(int[] nums) {
         Arrays.sort(nums);
         int n = nums.length;
@@ -81,7 +81,7 @@ public class Problem628MaximumProduct {
     }
 
     public static void main(String[] args) {
-        Problem628MaximumProduct p = new Problem628MaximumProduct();
+        Problem628EasyMaximumProduct p = new Problem628EasyMaximumProduct();
         int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         System.out.println(p.maximumProductSort(nums));
     }

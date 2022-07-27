@@ -43,7 +43,7 @@ import java.util.Map;
  * Related Topics 数组 哈希表 👍 419 👎 0
  */
 
-public class Problem697FindShortestSubArray {
+public class Problem697EasyFindShortestSubArray {
     /**
      * 找到出现次数最多且首末次出现距离最短的元素的元素
      */
@@ -77,7 +77,7 @@ public class Problem697FindShortestSubArray {
     }
 
     public static void main(String[] args) {
-        Problem697FindShortestSubArray p = new Problem697FindShortestSubArray();
+        Problem697EasyFindShortestSubArray p = new Problem697EasyFindShortestSubArray();
         int[] nums = {1, 2, 2, 3, 1};
         System.out.println(p.findShortestSubArray(nums));
     }

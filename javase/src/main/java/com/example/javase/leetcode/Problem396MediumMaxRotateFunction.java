@@ -51,7 +51,7 @@ import java.util.Arrays;
  */
 
 
-public class Problem396MaxRotateFunction {
+public class Problem396MediumMaxRotateFunction {
     public int maxRotateFunction(int[] nums) {
         int f = 0, n = nums.length, numSum = Arrays.stream(nums).sum();
         for (int i = 0; i < n; i++) {
