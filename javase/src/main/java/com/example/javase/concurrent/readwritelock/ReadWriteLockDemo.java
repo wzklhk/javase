@@ -30,12 +30,13 @@ class MyCache {
     private volatile Map<String, Object> map = new HashMap<>();
 
     public void put(String key, Object value) {
-        System.out.println(Thread.currentThread().getName() + "正在写数据");
+
 
         rwLock.writeLock().lock();
 
         try {
-            TimeUnit.MILLISECONDS.sleep(300);
+            System.out.println(Thread.currentThread().getName() + "正在写数据");
+            TimeUnit.MILLISECONDS.sleep(1000);
             map.put(key, value);
             System.out.println(Thread.currentThread().getName() + "完成写数据");
         } catch (Exception e) {
@@ -46,13 +47,14 @@ class MyCache {
     }
 
     public Object get(String key) {
-        System.out.println(Thread.currentThread().getName() + "正在读数据");
+
 
         rwLock.readLock().lock();
         Object o = null;
 
         try {
-            TimeUnit.MILLISECONDS.sleep(300);
+            System.out.println(Thread.currentThread().getName() + "正在读数据");
+            TimeUnit.MILLISECONDS.sleep(1000);
             o = map.get(key);
             System.out.println(Thread.currentThread().getName() + "完成读数据");
         } catch (Exception e) {
