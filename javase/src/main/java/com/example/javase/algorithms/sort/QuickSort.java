@@ -60,16 +60,54 @@ public class QuickSort {
         return i + 1;
     }
 
+    /**
+     * 交换位置元素
+     *
+     * @param nums 数组
+     * @param i    位置i索引
+     * @param j    位置j索引
+     */
     private void exchange(Integer[] nums, int i, int j) {
         Integer tmp = nums[i];
         nums[i] = nums[j];
         nums[j] = tmp;
     }
 
+    /**
+     * 交换位置元素
+     *
+     * @param nums 列表
+     * @param i    位置i索引
+     * @param j    位置j索引
+     */
     private void exchange(List<Integer> nums, int i, int j) {
         Integer tmp = nums.get(i);
         nums.set(i, nums.get(j));
         nums.set(j, tmp);
+    }
+
+    /**
+     * 返回数组nums中第i小的数
+     *
+     * @param nums 数组
+     * @param p    数组起始索引
+     * @param r    数组终止索引
+     * @param i    第i小索引
+     * @return 第i小的数
+     */
+    public Integer randomSelect(Integer[] nums, int p, int r, int i) {
+        if (p == r) {
+            return nums[p];
+        }
+        int q = randomPartition(nums, p, r);
+        int k = q - p + 1;
+        if (i == k) {
+            return nums[q];
+        } else if (i < k) {
+            return randomSelect(nums, p, q - 1, i);
+        } else {
+            return randomSelect(nums, q + 1, r, i - k);
+        }
     }
 
 
