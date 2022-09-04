@@ -1,4 +1,4 @@
-package com.example.javase.exam.meituan;
+package com.example.javase.exam.meituan1;
 
 import java.util.Scanner;
 
