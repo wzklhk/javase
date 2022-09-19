@@ -1,4 +1,4 @@
-package com.example.javase.exam.mihouo;
+package com.example.javase.exam.mihoyo;
 
 import java.util.ArrayList;
 import java.util.Collections;
