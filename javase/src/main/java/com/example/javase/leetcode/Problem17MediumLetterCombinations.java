@@ -1,5 +1,7 @@
 package com.example.javase.leetcode;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -25,12 +27,21 @@ public class Problem17MediumLetterCombinations {
         return combinations;
     }
 
+    /**
+     * 用回溯法找到电话号码的组合
+     *
+     * @param combinations 组合的字符串列表
+     * @param phoneMap     电话数字对应的字母表
+     * @param digits       输入的数字
+     * @param index        索引
+     * @param combination  组合的字符串
+     */
     private void backtrack(List<String> combinations, Map<Character, String> phoneMap, String digits, int index, StringBuffer combination) {
         if (index == digits.length()) {
             combinations.add(combination.toString());
         } else {
             char digit = digits.charAt(index);
-            String letters = phoneMap.get(digit);
+            String letters = phoneMap.get(digit);  // 找到数字对应的字母
             int lettersCount = letters.length();
             for (int i = 0; i < lettersCount; i++) {
                 combination.append(letters.charAt(i));
@@ -38,5 +49,13 @@ public class Problem17MediumLetterCombinations {
                 combination.deleteCharAt(index);
             }
         }
+    }
+
+    /**
+     * 测试用例
+     */
+    @Test
+    public void test() {
+        System.out.println(letterCombinations("23"));
     }
 }
