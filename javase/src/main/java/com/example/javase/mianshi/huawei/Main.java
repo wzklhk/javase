@@ -1,4 +1,4 @@
-package com.example.javase.exam.huaweimianshi;
+package com.example.javase.mianshi.huawei;
 
 import java.util.ArrayList;
 import java.util.Collections;
