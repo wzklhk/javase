@@ -1,5 +1,6 @@
 package com.example.leetcode;
 
+import com.example.leetcode.structure.ListNode;
 import org.junit.Test;
 
 import java.util.HashSet;
