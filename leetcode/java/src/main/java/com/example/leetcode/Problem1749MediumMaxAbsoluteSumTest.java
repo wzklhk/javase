@@ -1,4 +1,4 @@
-package com.example.javase;
+package com.example.leetcode;
 
 import org.junit.Test;
 
