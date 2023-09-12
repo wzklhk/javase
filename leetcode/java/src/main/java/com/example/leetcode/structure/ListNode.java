@@ -15,4 +15,22 @@ public class ListNode {
         this.val = val;
         this.next = next;
     }
+
+    public static ListNode toLinkedList(int[] list) {
+        ListNode ans = new ListNode();
+        ListNode p = ans;
+        for (int i : list) {
+            p.next = new ListNode(i);
+            p = p.next;
+        }
+        return ans.next;
+    }
+
+    public static void print(ListNode head) {
+        ListNode p = head;
+        while (p != null) {
+            System.out.println(p.val);
+            p = p.next;
+        }
+    }
 }
