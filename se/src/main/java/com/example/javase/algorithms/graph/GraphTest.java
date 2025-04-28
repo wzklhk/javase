@@ -1,3 +1,4 @@
+/*
 package com.example.javase.algorithms.graph;
 
 import com.example.javase.algorithms.tree.TreeNode;
@@ -10,11 +11,13 @@ public class GraphTest {
 
     public static void main(String[] args) {
 
-        /*
+        */
+/*
          * 0 - 1   2 - 3
          * |   | / | / |
          * 4   5 - 6 - 7
-         */
+         *//*
+
         int[][] graph = {
                 {0, 1, 0, 0, 1, 0, 0, 0},
                 {1, 0, 0, 0, 0, 1, 0, 0},
@@ -69,3 +72,4 @@ public class GraphTest {
         }
     }
 }
+*/
