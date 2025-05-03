@@ -2,13 +2,12 @@ package com.example.demo.api.controller;
 
 
 import com.example.demo.api.service.UserService;
+import com.example.demo.pojo.Result;
 import com.example.demo.pojo.entity.User;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/user")
 public class UserController {
 
     private final UserService userService;
@@ -17,28 +16,28 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping
-    public List<User> list() {
-        return userService.list();
-    }
+    /*@GetMapping
+    public Result list() {
+        return Result.success(userService.list());
+    }*/
 
-    @GetMapping("/{id}")
-    public User get(@PathVariable Integer id) {
-        return userService.get(id);
+    @GetMapping
+    public Result<User> get(@RequestParam Integer id) {
+        return Result.success(userService.get(id));
     }
 
     @PostMapping
-    public int add(@RequestBody User user) {
-        return userService.add(user);
+    public Result add(@RequestBody User user) {
+        return Result.success(userService.add(user));
     }
 
     @PutMapping
-    public int update(@RequestBody User user) {
-        return userService.update(user);
+    public Result update(@RequestBody User user) {
+        return Result.success(userService.update(user));
     }
 
-    @DeleteMapping("/{id}")
-    public int delete(@PathVariable Integer id) {
-        return userService.delete(id);
+    @DeleteMapping
+    public Result delete(@RequestParam Integer id) {
+        return Result.success(userService.delete(id));
     }
 }

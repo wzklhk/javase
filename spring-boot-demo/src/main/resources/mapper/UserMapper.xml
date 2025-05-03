@@ -12,27 +12,27 @@
     </resultMap>
 
     <select id="findAll" resultMap="UserResultMap">
-        SELECT * FROM user
+        SELECT * FROM "user"
     </select>
 
     <select id="findById" resultMap="UserResultMap">
-        SELECT * FROM user WHERE id = #{id}
+        SELECT * FROM "user" WHERE id = #{id}
     </select>
 
     <insert id="insert" useGeneratedKeys="true" keyProperty="id">
-        INSERT INTO user (username, email)
+        INSERT INTO "user" (username, email)
         VALUES (#{username}, #{email})
     </insert>
 
     <update id="update">
-        UPDATE user
+        UPDATE "user"
         SET username = #{username},
         email = #{email}
         WHERE id = #{id}
     </update>
 
     <delete id="delete">
-        DELETE FROM user WHERE id = #{id}
+        DELETE FROM "user" WHERE id = #{id}
     </delete>
 
 </mapper>

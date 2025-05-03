@@ -18,10 +18,17 @@ redis-server /etc/redis/redis.conf
 
 ## 数据结构
 
+字符串（str）
+列表（list）
+集合（set）
+有序集合（zset）
+哈希（hash）
+
+
 ```json
 {
   "str": "value",
-  "user": {
+  "hash": {
     "name": "Tom",
     "age": "18"
   },

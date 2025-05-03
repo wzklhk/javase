@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: spring-boot-demo
+
+  datasource:
+    # SQLite数据库
+    # url: jdbc:sqlite:db.sqlite
+    # driver-class-name: org.sqlite.JDBC
+
+    # H2数据库配置
+    url: jdbc:h2:mem:testdb;MODE=MYSQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+    # MySQL数据库配置
+    # url: jdbc:mysql://localhost:3306/db?useSSL=false&serverTimezone=UTC
+    # username: username
+    # password: password
+    # driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    defer-datasource-initialization: true
+
+  sql:
+    init:
+      mode: always  # 始终执行初始化脚本，即使使用的是非内存数据库。
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  output:
+    ansi:
+      enabled: always  # 日志彩色显示
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.demo.pojo.entity
+
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
